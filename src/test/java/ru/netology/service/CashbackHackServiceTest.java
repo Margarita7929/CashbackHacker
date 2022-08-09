@@ -24,11 +24,11 @@ public class CashbackHackServiceTest {
         assertEquals(actual, expected);
     }
 
-    @Test
-    public void testRemainIfNull() {
 
-        int expected = 1000;
-        int actual = service.remain(0);
+   @Test
+   public void testRemainIfFullSum() {
+        int expected = 0;
+        int actual = service.remain(1000);
         assertEquals(actual, expected);
     }
 }
